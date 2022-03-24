@@ -1,0 +1,18 @@
+server:
+  port: 8887
+spring:
+  application:
+    name: config-server
+
+
+  cloud:
+    config:
+      fail-fast: false
+      server:
+        git:
+          uri: https://github.com/Spiritbe4r/myconfig_data.git
+          search-paths: config-data
+          default-label: "main"
+
+
+
